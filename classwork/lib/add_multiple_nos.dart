@@ -7,5 +7,6 @@ void main() {
 }
 
 int add({required int? first, required int? second, int? third, int? forth}) {
+  // required la tyo no. lai compulsory rakhna prxa vanne compulson garxa
   return ((first ?? 0) + (second ?? 0) + (third ?? 0) + (forth ?? 0));
 }
