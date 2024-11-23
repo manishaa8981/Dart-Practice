@@ -8,7 +8,7 @@
       "name": "classwork",
       "request": "launch",
       "type": "dart",
-      "program": "bin/main.dart"
+      "program": "lib/encapsulation.dart"
     }
   ]
 }

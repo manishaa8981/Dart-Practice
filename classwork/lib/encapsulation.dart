@@ -1,20 +1,23 @@
 class Student {
-  String _name = ''; //  _ indicates private class
+  String _name = ''; // _ indicates private variable
   int _age = 0;
 
-  //Getter
+  // Getter for name
   String get name => _name;
+
+  // Getter for age
   int get age => _age;
 
-  //Setter
+  // Setter for name
   set name(String value) {
     if (value.isNotEmpty) {
-      _name = name;
+      _name = value;
     } else {
       print("Name is empty.");
     }
   }
 
+  // Setter for age
   set age(int value) {
     if (value > 0) {
       _age = value;
@@ -22,11 +25,17 @@ class Student {
       print("Age must be greater than 0.");
     }
   }
+}
 
-  void main() {
-    var student = Student();
+// Main function (entry point)
+void main() {
+  var student = Student();
 
-    student.name = "Manisha";
-    student.age = 20;
-  }
+  // Setting values using setters
+  student.name = "Manisha";
+  student.age = 20;
+
+  // Accessing values using getters
+  print("Student Name: ${student.name}");
+  print("Student Age: ${student.age}");
 }
