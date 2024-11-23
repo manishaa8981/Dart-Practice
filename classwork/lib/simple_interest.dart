@@ -4,5 +4,5 @@ void main() {
 }
 
 double si({required double? p, required double? t, required double? r}) {
-  return (p ?? 0) + (t ?? 0) + (r ?? 0);
+  return ((p ?? 0) * (t ?? 0) * (r ?? 0)) / 100;
 }
